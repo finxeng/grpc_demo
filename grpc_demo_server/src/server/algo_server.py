@@ -3,8 +3,8 @@ import grpc
 from concurrent import futures
 import logging
 
-from src.proto import algo_pb2, algo_pb2_grpc
-from src.server.algo_utils import algo_single_modal, algo_multi_modal
+from proto import algo_pb2_grpc
+from algo_utils import algo_single_modal, algo_multi_modal
 
 
 class Algo(algo_pb2_grpc.AlgoServiceServicer):
